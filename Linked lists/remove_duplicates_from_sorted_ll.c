@@ -1,4 +1,4 @@
-//c program to remove duplicates from an unsorted singly linked list
+//c program to remove duplicates from a sorted singly linked list
 #include<stdio.h>
 #include<stdlib.h>
 struct node{
