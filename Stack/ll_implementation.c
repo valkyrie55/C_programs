@@ -36,23 +36,47 @@ void pop(){
         p = head;
         head = head->next;
         free(p);
-        printf("\n%d popped",i);
+        printf("\n%d popped\n",i);
     }
 }
  
+void display(){
+    struct node* q;
+    q = head;
+    if(head == NULL)
+        printf("Stack empty");
+    else{
+        while(q!= NULL){
+            printf("%d->",q->data);
+            q = q->next;
+        }
+        if(q == NULL)
+                printf("NULL\n");
+    }
+
+}
+
 int main(){ 
-    int i;
-    push(10);
-    push(20);
-    push(30);
-    push(40);
-    push(50);
-    push(60);
-    //pop
-    pop();
-    pop();
-    printf("\nTop element is %d",head->data);
-    //printf("%d popped", i);
-    printf("\nOperations done!");
+    int ch,val;
+    printf("\n---Stack operations---");
+    while(ch!= 0){
+        printf("\n1. Push \n2. Pop\n3. Display\n4. Exit");
+        printf("\nEnter your choice");
+        scanf("%d", &ch);
+        switch(ch){
+            case 1: printf("\nEnter value to be pushed:");
+                    scanf("%d", &val);
+                    push(val);
+                    break;
+            case 2: pop();
+                    break;
+            case 3: display();
+                    break;
+            case 4: exit(0);
+                    break;
+            default:printf("\nInnvalid choice!");
+        }
+    };
+    
     return 0;
 }
