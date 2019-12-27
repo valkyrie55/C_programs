@@ -1,5 +1,5 @@
-//find minimum value in BST
-//Ans: Traverse to the leftmost node
+//find minimum and maximum value in BST
+
 #include<stdio.h>
 #include<stdlib.h>
 struct node{
@@ -39,6 +39,15 @@ int minvalue(struct node* node){
 	return(curr->data);
 }
 
+int maxvalue(struct node* node){
+	struct node* curr = node;
+	//traverse to the right node
+	while(curr->right!= NULL){
+		curr = curr->right;
+	}
+	return(curr->data);
+}
+
  int main(){
  	struct node* root= NULL;
  	root = insert(root,4);
@@ -48,5 +57,6 @@ int minvalue(struct node* node){
  	insert(root,6);
  	insert(root,5);
  	printf("\nMinimum value: %d ",minvalue(root) );
+ 	printf("\nMaximum value: %d ",maxvalue(root) );
  	return 0;
  }
