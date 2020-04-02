@@ -38,7 +38,7 @@ void printactivities(struct Activity arr[], int n){
 	//if starting time of current activity is greater than the finish time 
 	// of previous activity then the activity is selected
 	for(i=1; i< n;i++){
-		if(arr[i].start > arr[j].finish){
+		if(arr[i].start >= arr[j].finish){
 			printf("%d      %d\n", arr[i].start, arr[i].finish);
 			j = i;
 		}
