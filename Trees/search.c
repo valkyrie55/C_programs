@@ -1,13 +1,23 @@
 // Search for an element in BST
-#include<stdio.h>
-#include<stdlib.h>
+# include<stdio.h>
+# include <stdlib.h>
 
 struct node{
 	int data;
-	struct node* left, *right;
-};
+	struct node *left;
+	struct node *right;
+} *root = NULL, *temp;
+
+void display(struct node* node){
+	if(node!= NULL){ 	//preorder
+		printf("\n%d", node->data);
+		display(node->left);
+		display(node->right);
+	}
+}
 
 struct node* create(int val){
+	//create new node
 	struct node* n = (struct node*)malloc(sizeof(struct node));
 	n->data = val;
 	n->left = n->right = NULL;
@@ -24,30 +34,23 @@ struct node* insert(struct node* node, int val){
 	return node;
 }
 
-void display(struct node* node){
-	if(node != NULL){
-		printf("\n%d",node->data);
-		display(node->left);
-		display(node->right);
-	}
-}
-
 int search(struct node* node, int val){
-	if(node == NULL){
-		printf("\nTree is empty!");
+	if(node== NULL){
+		printf("\nTree is empty");
 		return -1;
 	}
 	else if(val == node->data)
 		return 1;
 	else if(val < node->data)
-		node= node->left;
+		node = node->left;
 	else
 		node = node->right;
+
 	while(node != NULL){
 		if(val == node->data)
 			return 1;
 		else if(val < node->data)
-			node= node->left;
+			node = node->left;
 		else
 			node = node->right;
 	}
@@ -55,8 +58,7 @@ int search(struct node* node, int val){
 }
 
 int main(){
-	int i, val;
-	struct node* root = NULL;
+	int x,i;
 	root = insert(root, 50);
 	insert(root,30);
 	insert(root,20);
@@ -65,12 +67,12 @@ int main(){
 	insert(root,60);
 	insert(root,100);
 	display(root);
-	printf("\nEnter the element you wanna search---");
-	scanf("%d",&val);
-	i = search(root,val);
+	printf("\nEnter the value you wanna search!");
+	scanf("%d", &x);
+	i = search(root, x);
 	if(i == -1)
-		printf("\n%d doesn't exits", val);
+		printf("\n%d doesn't exists",x);
 	else
-		printf("\n%d exits", val);
+		printf("\n%d exists",x);
 	return 0;
 }
