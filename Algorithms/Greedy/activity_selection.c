@@ -56,4 +56,4 @@ int main(){
 	}
 	printactivities(arr,n);
 	return 0;
-}
+} 
