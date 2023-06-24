@@ -1,0 +1,25 @@
+Model_Name,Brand,Source,Country,Feature_1_Negative_Total,Feature_1_Neutral_Total,Feature_1_Positive_Total,Feature_2_Negative_Total,Feature_2_Neutral_Total,Feature_2_Positive_Total,Feature_3_Negative_Total,Feature_3_Neutral_Total,Feature_3_Positive_Total,Feature_4_Negative_Total,Feature_4_Neutral_Total,Feature_4_Positive_Total
+Model 1 - TAP,TAP,Bestbuy,USA,0,0,2,0,0,4,1,0,7,0,0,17
+Model 1 - TAP,TAP,Flipkart,India,1,1,0,0,0,2,0,0,3,0,0,1
+Model 1 - TAP,TAP,Mediamarkt,Germany,2,0,9,5,0,13,0,0,41,4,5,19
+Model 1 - TAP,TAP,US Cellular,USA,0,0,5,0,0,5,0,0,2,0,0,7
+Model 1 - TAP,TAP,Walmart,USA,0,0,2,0,0,2,0,0,2,0,0,1
+Model 1 ATLAS,ATLAS,Bestbuy,USA,0,0,13,4,1,16,1,0,50,5,1,44
+Model 1 ATLAS,ATLAS,Flipkart,India,1,1,1,3,0,2,0,0,1,0,3,0
+Model 1 ATLAS,ATLAS,Mediamarkt,Germany,0,0,1,1,1,2,0,0,33,2,0,7
+Model 1 ATLAS,ATLAS,US Cellular,USA,0,0,13,5,0,10,0,0,3,1,1,17
+Model 1 ATLAS,ATLAS,Walmart,USA,0,0,0,0,0,2,0,0,4,0,0,4
+Model 2 ATLAS,ATLAS,Bestbuy,USA,0,0,4,0,0,6,0,0,7,1,0,14
+Model 2 ATLAS,ATLAS,Flipkart,India,0,0,0,0,0,2,0,0,7,0,0,4
+Model 2 ATLAS,ATLAS,Mediamarkt,Germany,0,0,3,0,0,6,1,0,8,0,0,2
+Model 2 ATLAS,ATLAS,Walmart,USA,0,0,6,1,0,3,1,0,14,2,0,18
+Model 2 TAP,TAP,Bestbuy,USA,0,0,4,3,0,6,0,0,12,2,1,10
+Model 2 TAP,TAP,Flipkart,India,0,0,1,0,0,1,0,0,0,0,0,1
+Model 2 TAP,TAP,Mediamarkt,Germany,0,0,4,1,0,7,1,0,27,4,0,15
+Model 2 TAP,TAP,Walmart,USA,0,0,5,0,0,4,0,2,20,1,0,19
+Model 3 ATLAS,ATLAS,Flipkart,India,0,0,0,1,0,3,1,0,2,0,1,4
+Model 3 ATLAS,ATLAS,Mediamarkt,Germany,0,0,0,0,0,1,0,0,0,0,0,3
+Model 3 ATLAS,ATLAS,US Cellular,USA,0,0,17,0,2,31,1,0,32,0,3,58
+Model 3 TAP,TAP,Bestbuy,USA,0,0,7,1,0,7,0,0,7,0,0,9
+Model 3 TAP,TAP,Mediamarkt,Germany,0,0,3,0,0,3,1,0,1,0,0,3
+Model 3 TAP,TAP,US Cellular,USA,0,0,1,0,0,1,0,0,3,0,0,7
